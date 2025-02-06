@@ -1,0 +1,113 @@
+/* static/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+ 
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+ 
+.container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  position: relative;
+  width: 350px;
+}
+ 
+.title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+ 
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 15px;
+  margin: 0 auto;
+  position: relative;
+}
+ 
+.cell {
+  width: 100px;
+  height: 100px;
+  background: #404058;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #fff;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+ 
+.cell.X {
+  color: #ff7043;
+}
+ 
+.cell.O {
+  color: #42a5f5;
+}
+ 
+.cell:hover {
+  background: #505070;
+}
+ 
+.controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+ 
+.btn {
+  padding: 10px 15px;
+  font-size: 1em;
+  background: #ff7043;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: all 0.3s;
+}
+ 
+.btn:hover {
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+ 
+.winning-line {
+  position: absolute;
+  height: 4px;
+  background: #42a5f5;
+  visibility: hidden;
+  transform-origin: left center;
+}
+ 
+.status {
+  margin-top: 15px;
+  font-size: 1.2em;
+}
+ 
+.voice-display {
+  margin-top: 15px;
+  font-size: 1.1em;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+}
+.instructions {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #ccc;
+}st
